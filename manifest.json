@@ -8,8 +8,34 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["content.js"]
+      "js": [
+        "content.js"
+      ]
     }
   ],
-  "permissions": ["storage"]
+  "permissions": [
+    "declarativeContent",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/pingblock16.png",
+      "32": "images/pingblock32.png",
+      "48": "images/pingblock48.png",
+      "128": "images/pingblock128.png"
+    }
+  },
+  "icons": {
+    "16": "images/pingblock16.png",
+    "32": "images/pingblock32.png",
+    "48": "images/pingblock48.png",
+    "128": "images/pingblock128.png"
+  }
 }
